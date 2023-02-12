@@ -37,11 +37,11 @@ header .navbar ul li{
 header .navbar ul li a{
     font-size: 20px;
     padding: 20px;
-    color: rgb(182, 189, 207);
+    color: rgb(234, 236, 242);
     display: block;
 }
 header .navbar ul li a:hover{
-    background: rgba(138, 127, 197, 0.611);
+    background: rgba(53, 53, 95, 0.757);
     color: #fff;
 }
 header .navbar ul li ul{
@@ -73,14 +73,32 @@ header label{
     cursor: pointer;
     display: none;
 }
+h1{font-size: 50px;
+    font-family: Arial, sans-serif;
+  }
+  h2 {font-size: 40px;
+      font-family: Arial, sans-serif;
+  }
+.title{
+    color: #f8f8fad3;
+    border: none;
+    position: relative;
+    margin-left: 50px;
+    top: 300px;
+}
+
 
 @media(max-width:991px){
     header{
         padding:20px;
     }
-}
+
 header label{
     display: initial;
+}
+
+header .navbar ul li a{
+    color: rgb(38, 38, 40);
 }
 header .navbar{
     position: absolute;
@@ -90,7 +108,7 @@ header .navbar{
     display: none;
 }
 header .navbar ul li{
-    width: 100% ;
+    width: 100%;
 }
 header .navbar ul li ul{
     position: relative;
@@ -106,4 +124,5 @@ header .navbar ul li ul li ul{
 
 #menu-bar:checked ~ .navbar{
     display: initial;
+}
 }
