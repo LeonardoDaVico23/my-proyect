@@ -1,0 +1,128 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: arial, helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    background: url(../app/images/auto.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top: 0px; left: 0; right: 0;
+    background: rgba(8, 1, 43, 0.86);
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .Logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: rgb(243, 235, 235);
+}
+header .navbar ul{
+    list-style: none;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(234, 236, 242);
+    display: block;
+}
+header .navbar ul li a:hover{
+    background: rgba(53, 53, 95, 0.757);
+    color: #fff;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: rgba(24, 4, 106, 0.842);
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(201, 197, 224, 0.868);
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color:#ffffff;
+    cursor: pointer;
+    display: none;
+}
+h1{font-size: 50px;
+    font-family: Arial, sans-serif;
+  }
+  h2 {font-size: 40px;
+      font-family: Arial, sans-serif;
+  }
+.title{
+    color: #f8f8fad3;
+    border: none;
+    position: relative;
+    margin-left: 50px;
+    top: 300px;
+}
+
+
+@media(max-width:991px){
+    header{
+        padding:20px;
+    }
+
+header label{
+    display: initial;
+}
+
+header .navbar ul li a{
+    color: rgb(38, 38, 40);
+}
+header .navbar{
+    position: absolute;
+    top: 100%; left:0; right:0;
+    background:#fff;
+    border-top: 1px solid rgba(0,0,0,1);
+    display: none;
+}
+header .navbar ul li{
+    width: 100%;
+}
+header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+}
+header .navbar ul li ul li{
+    background: #eee;
+}
+header .navbar ul li ul li ul{
+    width: 100%;
+    left: 0;
+}
+
+#menu-bar:checked ~ .navbar{
+    display: initial;
+}
+}
