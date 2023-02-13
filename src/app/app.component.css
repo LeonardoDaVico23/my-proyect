@@ -327,9 +327,18 @@ h3{
     color: #eee;
     position: relative;
     margin-left: 0;
-    margin-top: 330px;
+    margin-top: 250px;
 }
 .p2-4{
+    top: 250px;
+    margin-left: 2%;
+    width: 98%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    height: 100px;
+    text-align: left;
+}
+.p2-5{
     top: 250px;
     margin-left: 2%;
     width: 98%;
