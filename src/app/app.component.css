@@ -10,6 +10,7 @@ body{
     background: url(../app/images/auto.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 header{
     position: fixed;
@@ -73,18 +74,95 @@ header label{
     cursor: pointer;
     display: none;
 }
-h1{font-size: 50px;
+.forro{
+    min-height: 100vh;
+    background:#1817174b ;
+    position: relative;
+    margin-left: 0;
+    margin-top: -40px;
+}
+.title h1{font-size: 50px;
     font-family: Arial, sans-serif;
   }
-  h2 {font-size: 40px;
+ .title h2 {font-size: 40px;
       font-family: Arial, sans-serif;
   }
 .title{
-    color: #f8f8fad3;
+    color: #f8f8faee;
     border: none;
     position: relative;
     margin-left: 50px;
     top: 300px;
+}
+.subtitle{
+    background:#11162bbd ;
+    position: relative;
+    margin-left: 0;
+    margin-top: -40px;
+}
+.subtitle h1{
+  text-align: center;
+  font-size: 30px;
+}
+.subtitle p{
+    text-align: center;
+    font-size: 20px;
+}
+.imagenes{
+display: flex;
+justify-content: center;
+position: relative;
+top: 50px;
+margin-left: 0;
+}
+.img2{
+    width: 25%;
+   background: url(../app/images/img2.jpg) no-repeat;
+    background-position: center;
+    margin: 20px;
+}
+.img4{
+    width: 25%;
+    background-size: cover;
+    background: url(../app/images/img4.jpg) no-repeat;
+     background-position: center;
+     margin: 20px;
+}
+.h2-2 {
+    position: relative;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+.p2-2{
+    margin-left: 2%;
+    width: 98%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    height: 100px;
+    text-align: left;
+}
+h3{
+    position: relative;
+    height: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+.p3{
+    margin-left: 2%;
+    width: 98%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    height: 100px;
+    text-align: left;
+}
+.pie_pagina{
+    min-height: 100%;
+    background:#0a0a0af6;
+    color: #eee;
+    position: relative;
+    margin-left: 0;
+    margin-top: -40px;
 }
 
 
@@ -124,5 +202,19 @@ header .navbar ul li ul li ul{
 
 #menu-bar:checked ~ .navbar{
     display: initial;
+}
+.h1{font-size: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .h2 {font-size: 20px;
+      font-family: Arial, sans-serif;
+  }
+.title{
+    text-align: center;
+    color: #e2e2e7ef;
+    border: none;
+    position: relative;
+    margin-left: 50px;
+    top: 470px;
 }
 }
