@@ -1,348 +1,264 @@
-*{
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    font-family: arial, helvetica, sans-serif;
-    text-transform: capitalize;
-    text-decoration: none;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
-body{
-    min-height: 100vh;
-    background: url(../app/images/auto.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    
+.barraPrincipal{
+  background: rgb(0, 0, 92);
+  width: 100%;
+  height: 55px;
+  
+}
+.cp{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 330px;
+  top: 5px;
+  background-image: url(../app/images/ordenador-portatil.png);
+  background-size: cover;
 }
 header{
-    position: fixed;
-    top: 0px; left: 0; right: 0;
-    background: rgba(8, 1, 43, 0.86);
-    box-shadow: 0 5px 10px rgba(0,0,0,1);
-    padding: 0px 7%;
+  font-family: 'Inria Serif';
+font-style: normal;
+line-height: 26px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+}
+.leo{
+position: absolute;
+width: 194px;
+height: 44px;
+left: 115px;
+top: 5px;
+font-weight: 400;
+font-size: 18px;
+}
+.des{
+position: absolute;
+width: 230px;
+height: 44px;
+left: 100px;
+top: 22px;
+font-weight: 400;
+font-size: 15px;
+}
+.num{
+  position: absolute;
+  width: 194px;
+  height: 44px;
+  left: 780px;
+  top: 5px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.corr{
+  position: absolute;
+  width: 194px;
+  height: 44px;
+  left: 815px;
+  top: 25px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.telf{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 780px;
+  top: 8px;
+  background-image: url(../app/images/llamada-telefonica.png);
+  background-size: cover;
+}
+.mail{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 780px;
+  top: 31px;
+  background-image: url(../app/images/gmail.png);
+  background-size: cover;
+}
+.barrCont{
+  width: 120px;
+  height: 30px;
+  left: 1110px;
+  top: 12px;
+  position: absolute;
+  background-color: yellow;
+  border-radius: 5px;
+}
+.call{
+  position: absolute;
+  width: 194px;
+  height: 44px;
+  left: -35px;
+  top: 2px;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgb(5, 5, 154);
+}
+  .barra_secundaria{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 55px;
+  }
+  .logo{
+    position: absolute;
+  width: 45px;
+  height: 45px;
+  left: 40px;
+  top: 60px;
+  background-image: url(../app/images/automovil-con-llave.png);
+  background-size: cover;
+  }
+  .Mechanic{
+    position: absolute;
+    width: 194px;
+    height: 44px;
+    margin-left: 105px;
+    margin-top: 0px;
+    font-weight: 400;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .inicia_sesion{
+    position: absolute;
+    width: 194px;
+    height: 44px;
+    color: rgb(3, 3, 111);
+    margin-left: 989px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .registrate{
+    position: absolute;
+    width: 94px;
+    height: 44px;
+    color: rgb(3, 3, 111);
+    margin-left: 1150px;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .linea{
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 1125px;
+    margin-top: 12px;
+  }
+  .barra_secundaria ul{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-}
-header .Logo{
-    font-weight: bolder;
-    font-size: 25px;
-    color: rgb(243, 235, 235);
-}
-header .navbar ul{
-    list-style: none;
-}
-header .navbar ul li{
+  }
+  .barra_secundaria ul li a p {
     position: relative;
-    float: left;
-}
-header .navbar ul li a{
-    font-size: 20px;
-    padding: 20px;
-    color: rgb(234, 236, 242);
-    display: block;
-}
-header .navbar ul li a:hover{
-    background: rgba(53, 53, 95, 0.757);
-    color: #fff;
-}
-header .navbar ul li ul{
-    position: absolute;
-    left: 0;
-    width: 200px;
-    background: rgba(24, 4, 106, 0.842);
-    display: none;
-}
-header .navbar ul li ul li{
-    width: 100%;
-    border-top: 1px solid rgba(201, 197, 224, 0.868);
-}
-header .navbar ul li ul li ul{
-    left: 200px;
-    top: 0;
-}
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul{
-    display: initial;
+    justify-items: center;
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: -5px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.2s;
+    text-align: center; /* Alinea el texto al centro */
+    text-decoration: none; /* Quita la línea por defecto */
 }
 
-#menu-bar{
-    display: none;
+.barra_secundaria ul li a p:hover {
+    text-decoration: underline; /* Muestra la línea debajo del texto al hacer hover */
+    color: rgb(32, 175, 222) ;
 }
-header label{
-    font-size: 20px;
-    color:#ffffff;
-    cursor: pointer;
-    display: none;
-}
-.forro{
-    min-height: 100vh;
-    background:#1817174b ;
+  .tercer_barra{
     position: relative;
-    margin-left: 0;
-    margin-top: -40px;
-}
-.title h1{font-size: 50px;
-    font-family: Arial, sans-serif;
+    background: rgb(0, 0, 92);
+    width: 100%;
+    height: 48px;
   }
- .title h2 {font-size: 40px;
-      font-family: Arial, sans-serif;
-  }
-.title{
-    color: #f8f8faee;
-    border: none;
+  .foto{
     position: relative;
-    margin-left: 50px;
-    top: 300px;
-}
-.subtitle{
-    background:#11162bbd ;
-    position: relative;
-    margin-left: 0;
-    margin-top: -40px;
-}
-.subtitle h1{
-  text-align: center;
-  font-size: 30px;
-}
-.subtitle p{
-    text-align: center;
-    font-size: 20px;
-}
-.imagenes{
-display: flex;
-justify-content: center;
-position: relative;
-top: 50px;
-margin-left: 0;
-}
-.img2{
-    width: 25%;
-   background: url(../app/images/img2.jpg) no-repeat;
-    background-position: center;
-    margin: 20px;
-}
-.img4{
-    width: 25%;
+    width: 121%;
+    height: 500px;
+    margin-left: 524px;
+    top: 0px;
+    background-image: url(../app/images/dos-mecanicos-barbudos-reparan-motor-camion-que-eleva-sobre-elevador-hidraulico-garaje-estacion-servicio.jpg);
     background-size: cover;
-    background: url(../app/images/img4.jpg) no-repeat;
-     background-position: center;
-     margin: 20px;
-}
-.h2-2 {
-    position: relative;
-    height: 100px;
-    text-align: center;
-    font-size: 40px;
-}
-.p2-2{
-    margin-left: 2%;
-    width: 98%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    height: 100px;
-    text-align: left;
-}
-.h2-3{
-    position: relative;
-    height: 100px;
-    text-align: center;
-    font-size: 40px;
-}
-h3{
-    position: relative;
-    height: 100px;
-    text-align: center;
-    font-size: 40px;
-}
-.p2-3{
-    margin-left: 2%;
-    width: 98%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    height: 100px;
-    text-align: left; 
-}
-.p3{
-    margin-left: 2%;
-    width: 98%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    height: 100px;
-    text-align: left;
-}
-.pie_pagina{
-    min-height: 100%;
-    background:#0a0a0af6;
-    color: #eee;
-    position: relative;
-    margin-left: 0;
-    margin-top: 100px;
-}
-
-
-@media(max-width:991px){
-    header{
-        padding:20px;
-    }
-
-header label{
-    display: initial;
-}
-
-header .navbar ul li a{
-    color: rgb(38, 38, 40);
-}
-header .navbar{
-    position: absolute;
-    top: 100%; left:0; right:0;
-    background:#fff;
-    border-top: 1px solid rgba(0,0,0,1);
-    display: none;
-}
-header .navbar ul li{
-    width: 100%;
-}
-header .navbar ul li ul{
-    position: relative;
-    width: 100%;
-}
-header .navbar ul li ul li{
-    background: #eee;
-}
-header .navbar ul li ul li ul{
-    width: 100%;
-    left: 0;
-}
-
-#menu-bar:checked ~ .navbar{
-    display: initial;
-}
-.title h1{font-size: 20px;
-    font-family: Arial, sans-serif;
   }
- .title h2 {font-size: 20px;
-      font-family: Arial, sans-serif;
-  }
-.title{
-    margin-left: 2%;
-    color: #f8f8faee;
-    border: none;
-    position: relative;
-    margin-left: 50px;
-    top: 400px;
+.barratxt{
+  background: rgb(59, 59, 64);
+  width: 50%;
+  height: 500px;
+  margin-left: 0px;
+  margin-top: 0px;
 }
-.subtitle{
-    background:#272e46e7 ;
-    position: relative;
-    margin-left: 0;
-    margin-top: -50px;
+.barrafoto{
+  position: absolute;
+  background: rgba(0, 0, 92, 0.351);
+  width: 100%;
+  height: 180px;
+  margin-top: 200px;
+  margin-left: 0;
 }
-.subtitle h1{
-  text-align: center;
-  font-size: 20px;
+.text1{
+  position: absolute;
+width: 194px;
+height: 44px;
+left: 125px;
+top: 5px;
+font-weight: 400;
+font-size: 60px;
+font-weight: bold;
+color: #ffffffd7;
 }
-.subtitle p{
-    color: rgb(241, 241, 247);
-    text-align: center;
-    font-size: 15px;
+.text2{
+  position: absolute;
+width: 194px;
+height: 44px;
+left: 244px;
+top: 75px;
+font-weight: 400;
+font-size: 60px;
+font-weight: bold;
+color: #ffffffd5;
 }
-.imagenes{
-display: flex;
-justify-content: center;
-position: relative;
-top: 50px;
-margin-left: 0;
+.foto2{
+  position: absolute;
+  width: 524px;
+  height: 270px;
+  left: 0px;
+  top: 158px;
+  background-image: url(../app/images/pexels-mike-bird-212100.jpg);
+  background-size: cover;
 }
-.img2{
-    width: 25%;
-   background: url(../app/images/img2.jpg) no-repeat;
-    background-position: center;
-    margin: 20px;
+.foto3{
+  position: absolute;
+  width: 524px;
+  height: 230px;
+  left: 0px;
+  top: 428px;
+  background-image: url(../app/images/pexels-cottonbro-studio-4489704.jpg);
+  background-size: cover;
 }
-.img4{
-    width: 25%;
-    background-size: cover;
-    background: url(../app/images/img4.jpg) no-repeat;
-     background-position: center;
-     margin: 20px;
+.nav-bar ul { 
+  display: flex ;
 }
-.h2-2 {
-    color: blue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    height: 100px;
-    text-align: center;
-    font-size: 20px;
+.nav-bar ul li a {
+  position: relative;
+  top: 12px;
+  margin-left: 140px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  transition: 0.2s;
 }
-.p2-2{
-    top: -40px;
-    margin-left: 2%;
-    width: 98%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    height: 100px;
-    text-align: left;
-}
-h3{
-    color: blue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    height: 100px;
-    text-align: center;
-    font-size: 20px;
-    top: 50px;
-}
-.h2-3{
-    color: blue;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    position: relative;
-    height: 100px;
-    text-align: center;
-    font-size: 20px;
-    top: 185px;
-}
-.p2-3{
-    top: 130px;
-    margin-left: 2%;
-    width: 98%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    height: 100px;
-    text-align: left;
-}
-.p3{
-    top: 20px;
-    margin-left: 2%;
-    width: 98%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    height: 100px;
-    text-align: left;
-}
-.pie_pagina{
-    min-height: 100%;
-    background:#0a0a0af6;
-    color: #eee;
-    position: relative;
-    margin-left: 0;
-    margin-top: 250px;
-}
-.p2-4{
-    top: 250px;
-    margin-left: 2%;
-    width: 98%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    height: 100px;
-    text-align: left;
-}
-.p2-5{
-    top: 250px;
-    margin-left: 2%;
-    width: 98%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    height: 100px;
-    text-align: left;
-}
+.nav-bar ul li a:hover {
+  color: #16006c;
+  background-color: #beccea;
 }
